@@ -1,0 +1,28 @@
+{
+  "name": "secure-connect-communication-platform",
+  "version": "1.0.0",
+  "description": "Lab 4 - Secure Connect and Communication Platform: JWT + bcrypt auth, RBAC, secure Notes API, Socket.IO real-time chat and EventEmitter features",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed:admin": "node scripts/createAdmin.js",
+    "chat:demo": "node scripts/chatDemo.js",
+    "test": "node --test --test-concurrency=1 tests/api.test.js tests/socket.test.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}
